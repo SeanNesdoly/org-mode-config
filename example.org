@@ -1,0 +1,86 @@
+#+title: Example org Document \linebreak (line 2)
+#+subtitle: subtitle 
+#+author: Sean Nesdoly
+#+date: 2019-10-04
+#+include: ~/org/template.org
+
+#+BEGIN_abstract
+Cheers and a happy stampede! Throwing some thoughts down here to see what
+\LaTeX{} renders out of it. Do not mind me. Tuesday is coming, did you bring
+your rain coat? I live in a giant bucket.
+#+END_abstract
+#+LATEX: \tableofcontents
+#+LATEX: \listoftables
+#+LATEX: \listoffigures
+
+For more tips and tricks on exporting org files to latex: [[https://orgmode.org/worg/org-tutorials/org-latex-export.html][org-latex-export]]
+\pagebreak
+
+* Header
+~hello world~
+$$ math $$
+$math$
+: mono space
+\kappa
+
+** code
+#+BEGIN_SRC python :exports none :results silent
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(0, np.pi)
+y = np.sinh(x)
+plt.plot(x,y)
+plt.xlabel('x')
+plt.ylabel('sinh(x)')
+plt.savefig('sinh.png')
+#+END_SRC
+
+*** graph
+See graph below.
+
+#+latex: \begin{multicols}{2}
+
+#+CAPTION: Graph of $y = sinh(x)$.
+#+ATTR_LaTeX: :placement [H] :width 0.6\linewidth :height 0.6\linewidth
+[[label:fig-graph]]
+[[file:sinh.png]]
+
+#+CAPTION: stats
+#+ATTR_LaTeX: :placement [H]
+#+LABEL: fig:label
+[[file:~/Desktop/statistics.png]]
+
+#+latex: \end{multicols}
+
+The results are in Figure [[ref:fig-graph]]. For more information on placing images,
+go here: [[https://orgmode.org/manual/Images-in-LaTeX-export.html][Images in LaTex Export]]. Briefly, to position images within the
+document, remove ~:placement [H]~ and add in one of the following ~:float~
+options:
+- ~:float wrap~ makes text flow around the image on the right, with the image on
+  the left.
+- ~:float sideways~ puts the image on a new page and rotates it by ninety
+  degrees.
+- ~:float multicolumn~ forces the image to span across multiple columns within
+  the document. This should be used in conjunction with ~#+LaTeX_CLASS_OPTIONS:
+  [twocolumn]~.
+
+
+
+** A neat table
+#+CAPTION: Go Canada!
+|   | X                   | Y                           | Z    |
+|---+---------------------+-----------------------------+------|
+| / |                     | <                           | <>   |
+|   | 1                   | 2                           | 3    |
+|   | 99                  | 100                         | 1000 |
+|   | hello..             | world?                      | Z    |
+|   | To be or not to be. | string-string-string-string | D    |
+
+The initial sequencing of the human genome
+cite:lander01_initial_sequen_analy_human_genom.
+
+\pagebreak
+bibliographystyle:unsrt
+bibliography:../bibliography/Mendeley/library.bib
+

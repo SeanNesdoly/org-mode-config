@@ -1,0 +1,12 @@
+* Org files not loading properly
+On branch develop:
+: for dir in "$HOME/.emacs.d/elpa/develop/org-"*/; do find $dir -name "*.elc" -delete; done
+
+On branch master:
+: for dir in "$HOME/.emacs.d/elpa/org-"*/; do find $dir -name "*.elc" -delete; done
+
+* org-babel-load-languages has issues in v104.2 #3314
+https://github.com/syl20bnr/spacemacs/issues/3314
+
+* Emacs Error: Invalid function: org-babel-header-args-safe-fn
+https://sort-care.github.io/Emacs-Invalid-function-org-babel-header-args-safe-fn/
