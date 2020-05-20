@@ -1,6 +1,7 @@
 * Org files not loading properly
 On branch develop:
 : for dir in "$HOME/.emacs.d/elpa/develop/org-"*/; do find $dir -name "*.elc" -delete; done
+: for dir in "$HOME/.emacs.d/elpa/25.3/develop/org-"*/; do find $dir -name "*.elc" -delete; done
 
 On branch master:
 : for dir in "$HOME/.emacs.d/elpa/org-"*/; do find $dir -name "*.elc" -delete; done
