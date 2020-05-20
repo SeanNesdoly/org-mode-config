@@ -11,3 +11,20 @@ https://github.com/syl20bnr/spacemacs/issues/3314
 
 * Emacs Error: Invalid function: org-babel-header-args-safe-fn
 https://sort-care.github.io/Emacs-Invalid-function-org-babel-header-args-safe-fn/
+* Spacemacs update [2019-12]
+** Spacemacs commit tag on `develop` branch prior to [2019-12-08]
+commit 072c01f5f52e5c0c92821ff9dda4c6278a1d7d48 (HEAD -> develop)
+Author: smile13241324 <smile13241324@gmail.com>
+Date:   Thu Apr 18 18:58:40 2019 +0200
+
+    Fix binding for "capitalize keywords" in sql-layer
+        
+    Noticed a new warning during startup saying that sqlup-mode is using "=c"
+    where "=" is no prefix key. Noticed that the entire binding was not carried
+    out in this case.
+                            
+    Therefore I have removed "=" from the binding but left it on "c" until enough
+    text manipulations are available, then it should be moved to "x text
+    manipulation" group instead.
+
+** Current emacs version as of [2019-12-10]: 25.3.1
