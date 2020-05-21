@@ -1,6 +1,7 @@
 #+EMAIL: srnesdoly@gmail.com
 #+OPTIONS: toc:nil H:3 num:2
 #+LaTeX_CLASS_OPTIONS: [a4paper]
+#+LATEX_HEADER: \usepackage{fancyhdr}
 #+LATEX_HEADER: \usepackage[margin=1in]{geometry}
 #+LATEX_HEADER: \usepackage{parskip}
 #+LATEX_HEADER: \usepackage{caption}
