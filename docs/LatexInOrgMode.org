@@ -17,6 +17,21 @@
 #+latex: \markright{Sean Nesdoly\hfill 2020-05-21\hfill}
 ** /fancyhdr/ package ([[http://mirror.its.dal.ca/ctan/macros/latex/contrib/fancyhdr/fancyhdr.pdf][PackageDocs]])
 #+latex: \pagestyle{fancy}
+#+latex: \lhead{\today}
+#+latex: \chead{Sean Nesdoly}
+
+NOTE: \rhead{} will be default display the section information.
+*** Apply /fancyhdr/ to title, chapter, or section pages
+By default, setting \pagestyle{fancy} does not set the header and footer
+sections for title, chapter, or section pages. To manually set these on a
+per-page basis, use the following:
+
+  #+latex: \thispagestyle{fancy}
+
+Follow this up by specifying custom header/footer code for the page.
+*** Clear the header or footer
+#+latex: \fancyfoot{}
+#+latex: \fancyhead{}
 
 * Line spacing
 ** \linespread{val}
