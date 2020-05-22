@@ -2,5 +2,5 @@
 # name: latex-header
 # key: <lath
 # --
-#+latex_header: \usepackage{${1:}}
+#+latex_header: \usepackage[${2:params}]{${1:package}}
 $0
