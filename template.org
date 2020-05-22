@@ -3,6 +3,7 @@
 #+LaTeX_CLASS_OPTIONS: [a4paper]
 #+LATEX_HEADER: \usepackage{fancyhdr}
 #+LATEX_HEADER: \usepackage[margin=1in]{geometry}
+#+LATEX_HEADER: \usepackage{setspace}
 #+LATEX_HEADER: \usepackage{parskip}
 #+LATEX_HEADER: \usepackage{caption}
 #+LATEX_HEADER: \usepackage{float}
