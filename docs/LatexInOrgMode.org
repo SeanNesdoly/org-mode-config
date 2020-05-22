@@ -27,3 +27,24 @@
 #+latex: \doublespacing
 #+latex: \onehalfspacing
 #+latex: \singlespacing
+
+* Page Layout
+To change the default layout of the page, insert the below code *after* the
+statement that includes the ~template.org~ file; this way, it will get inserted
+after the default specification that is defined in [[file:~/org/template.org]],
+thereby taking precedence.
+
+#+latex_header: \geometry{margin=50mm}
+
+Parameters & documentation offered by the ~geometry~ package can be found here:
+- http://texdoc.net/texmf-dist/doc/latex/geometry/geometry.pdf
+- http://ctan.math.illinois.edu/macros/latex/contrib/geometry/geometry.pdf
+
+** Define new page layout in middle of document
+#+latex: \newgeometry{params}
+
+** Restore geometry defined in the preamble of the document
+#+latex: \restoregeometry{}
+
+** Reduce size of header
+#+latex_header: \geometry{top=10mm, head=2mm, headsep=0mm}
