@@ -60,6 +60,3 @@ Parameters & documentation offered by the ~geometry~ package can be found here:
 
 ** Restore geometry defined in the preamble of the document
 #+latex: \restoregeometry{}
-
-** Reduce size of header
-#+latex_header: \geometry{top=10mm, head=2mm, headsep=0mm}
