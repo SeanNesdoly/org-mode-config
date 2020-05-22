@@ -1,5 +1,5 @@
 #+title: Example org Document \linebreak (line 2)
-#+subtitle: subtitle 
+#+subtitle: <subtitle>
 #+author: Sean Nesdoly
 #+date: 2019-10-04
 #+include: ~/org/template.org
@@ -15,11 +15,16 @@ Cheers and a happy stampede! Throwing some thoughts down here to see what
 \LaTeX{} renders out of it. Do not mind me. Tuesday is coming, did you bring
 your rain coat? I live in a giant bucket.
 #+END_abstract
+
 #+LATEX: \tableofcontents
 #+LATEX: \listoftables
 #+LATEX: \listoffigures
 
-For more tips and tricks on exporting org files to latex: [[https://orgmode.org/worg/org-tutorials/org-latex-export.html][org-latex-export]]
+-----
+
+- For more tips and tricks on exporting ~org~ files to latex: [[https://orgmode.org/worg/org-tutorials/org-latex-export.html][org-latex-export]].
+- Extensive documentation on \LaTeX{} from ~Overleaf~:
+  https://www.overleaf.com/learn.
 \pagebreak
 
 * Header
@@ -70,8 +75,6 @@ options:
 - ~:float multicolumn~ forces the image to span across multiple columns within
   the document. This should be used in conjunction with ~#+LaTeX_CLASS_OPTIONS:
   [twocolumn]~.
-
-
 
 ** A neat table
 #+CAPTION: Go Canada!
