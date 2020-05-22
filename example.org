@@ -4,6 +4,12 @@
 #+date: 2019-10-04
 #+include: ~/org/template.org
 
+#+latex: \pagestyle{fancy}
+#+latex: \lhead{\today}
+#+latex: \chead{Sean Nesdoly}
+
+#+latex: \singlespacing
+
 #+BEGIN_abstract
 Cheers and a happy stampede! Throwing some thoughts down here to see what
 \LaTeX{} renders out of it. Do not mind me. Tuesday is coming, did you bring
@@ -83,4 +89,9 @@ cite:lander01_initial_sequen_analy_human_genom.
 \pagebreak
 bibliographystyle:unsrt
 bibliography:../bibliography/Mendeley/library.bib
+
+#+latex: \thispagestyle{fancy}
+#+latex: \ofoot{Outside footer}
+#+latex: \lfoot{Example footnote\\ Second line}
+#+latex: \cfoot{Page \thepage}
 

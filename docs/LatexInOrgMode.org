@@ -1,0 +1,29 @@
+#+title: \LaTeX{} in Org Mode
+#+date: 2020-05-21
+#+include: ~/org/template.org
+
+* Headers and Footers ([[https://www.overleaf.com/learn/latex/headers_and_footers][OverleafDocs]]) ([[https://en.wikibooks.org/wiki/LaTeX/Customizing_Page_Headers_and_Footers][WikiBooks]])
+** Style types
+- empty
+- plain
+- headings
+- myheadings
+** Apply to current page and all subsequent ones
+#+latex: \pagestyle{'style'}
+** Apply ONLY to current page
+#+latex: \thispagestyle{'style'}
+** Custom header
+#+latex: \pagestyle{myheadings}
+#+latex: \markright{Sean Nesdoly\hfill 2020-05-21\hfill}
+** /fancyhdr/ package ([[http://mirror.its.dal.ca/ctan/macros/latex/contrib/fancyhdr/fancyhdr.pdf][PackageDocs]])
+#+latex: \pagestyle{fancy}
+
+* Line spacing
+** \linespread{val}
+- 1.0 = single spaced
+- 1.3 = one-and-a-half spaced
+- 1.6 = double spaced
+** \usepackage{setspace}
+#+latex: \doublespacing
+#+latex: \onehalfspacing
+#+latex: \singlespacing
