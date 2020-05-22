@@ -9,5 +9,6 @@
 #+LATEX_HEADER: \usepackage{float}
 #+LATEX_HEADER: \usepackage[yyyymmdd]{datetime}
 #+LATEX_HEADER: \renewcommand{\dateseparator}{--}
-#+LATEX_HEADER: \usepackage{natbib}
 #+LATEX_HEADER: \usepackage{multicol}
+#+LATEX_HEADER: \usepackage[super, sort&compress]{natbib}
+#+LATEX_HEADER: \usepackage[nottoc]{tocbibind}
