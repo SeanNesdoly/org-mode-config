@@ -12,16 +12,16 @@
 #+latex: \pagestyle{'style'}
 ** Apply ONLY to current page
 #+latex: \thispagestyle{'style'}
-** Custom header
+** Custom header with default \LaTeX{} code
 #+latex: \pagestyle{myheadings}
 #+latex: \markright{Sean Nesdoly\hfill 2020-05-21\hfill}
-** /fancyhdr/ package ([[http://mirror.its.dal.ca/ctan/macros/latex/contrib/fancyhdr/fancyhdr.pdf][PackageDocs]])
+** ~fancyhdr~ package ([[http://mirror.its.dal.ca/ctan/macros/latex/contrib/fancyhdr/fancyhdr.pdf][PackageDocs]])
 #+latex: \pagestyle{fancy}
 #+latex: \lhead{\today}
 #+latex: \chead{Sean Nesdoly}
 
 NOTE: \rhead{} will be default display the section information.
-*** Apply /fancyhdr/ to title, chapter, or section pages
+*** Apply ~fancyhdr~ to title, chapter, or section pages
 By default, setting \pagestyle{fancy} does not set the header and footer
 sections for title, chapter, or section pages. To manually set these on a
 per-page basis, use the following:
@@ -60,3 +60,19 @@ Parameters & documentation offered by the ~geometry~ package can be found here:
 
 ** Restore geometry defined in the preamble of the document
 #+latex: \restoregeometry{}
+
+* Title configuration with the ~titling~ package
+#+latex_header: \usepackage{titling}
+
+** Move title up the page, removing white space
+#+latex_header: \setlength{\droptitle}{-20mm}
+
+** Remove author, including white-space
+#+latex_header: \preauthor{}
+#+latex_header: \postauthor{}
+#+author:
+
+** Remove date, including white-space
+#+latex_header: \predate{}
+#+latex_header: \postdate{}
+#+date:
