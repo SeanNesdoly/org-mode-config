@@ -100,3 +100,17 @@ Parameters & documentation offered by the ~geometry~ package can be found here:
 
 * ~titlesec~ package: select alternative section titles
 [[https://ctan.org/pkg/titlesec?lang=en#:~:text=titlesec%20%E2%80%93%20Select%20alternative%20section%20titles,simple%20one%2Dstep%20page%20styles.][CTAN link for titlesec]]
+
+* ~hyperref~ package: link customization
+#+LATEX_HEADER: \usepackage{hyperref}
+#+LATEX_HEADER: \hypersetup{colorlinks=true, linkcolor=black}
+
+** Options
+- linkcolor [red]
+- anchorcolor [black]
+- citecolor [green]
+- filecolor [cyan]
+- menucolor [red]
+- runcolor [cyan - same as file color]
+- urlcolor [magenta]
+- allcolors -- use this if you want to set all links to the same color
