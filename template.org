@@ -4,18 +4,21 @@
 #+LATEX_CLASS_OPTIONS: [a4paper]
 
 #+LATEX_HEADER: \usepackage[margin=25mm]{geometry}
-#+LATEX_HEADER: \usepackage{fancyhdr}
-#+LATEX_HEADER: \usepackage{setspace}
 #+LATEX_HEADER: \usepackage{parskip}
 #+LATEX_HEADER: \usepackage{caption}
 #+LATEX_HEADER: \usepackage{float}
 #+LATEX_HEADER: \usepackage{multicol}
+#+LATEX_HEADER: \usepackage{fancyhdr}
+#+LATEX_HEADER: \usepackage{setspace}
 
 #+LATEX_HEADER: \usepackage{titling}
 #+LATEX_HEADER: \setlength{\droptitle}{-20mm}
 
 #+LATEX_HEADER: \usepackage[yyyymmdd]{datetime}
 #+LATEX_HEADER: \renewcommand{\dateseparator}{--}
+
+#+LATEX_HEADER: \usepackage{hyperref}
+#+LATEX_HEADER: \hypersetup{colorlinks=true, linkcolor=black}
 
 #+LATEX_HEADER: \usepackage[super, sort&compress]{natbib}
 #+LATEX_HEADER: \usepackage[nottoc]{tocbibind}
