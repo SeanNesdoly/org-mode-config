@@ -79,6 +79,17 @@ Parameters & documentation offered by the ~geometry~ package can be found here:
 #+latex_header: \predate{}
 #+latex_header: \postdate{}
 #+date:
+
+* Abstract
+#+BEGIN_abstract
+/Insert your abstract here./
+#+END_abstract
+
+** Include abstract in TOC, while using the ~hyperref~ package
+\begin{abstract}
+\phantomsection % required if using hyperref
+\addcontentsline{toc}{section}{\abstractname}
+\end{abstract}
 * ~babel~ package for languages
 #+LATEX_HEADER: \usepackage[english, french]{babel}
 \selectlanguage{english}
