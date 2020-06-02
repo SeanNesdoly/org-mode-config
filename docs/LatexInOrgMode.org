@@ -2,6 +2,9 @@
 #+date: 2020-05-21
 #+include: ~/org/template.org
 
+* Resources
+- [[https://orgmode.org/worg/org-tutorials/org-latex-export.html][LaTeX Export for Org Mode]]
+- [[http://mirror.its.dal.ca/ctan/macros/latex/contrib/tocbibind/tocbibind.pdf][tocbibind Package Documentation]]
 * Headers and Footers ([[https://www.overleaf.com/learn/latex/headers_and_footers][OverleafDocs]]) ([[https://en.wikibooks.org/wiki/LaTeX/Customizing_Page_Headers_and_Footers][WikiBooks]])
 ** Style types
 - empty
@@ -43,7 +46,7 @@ Follow this up by specifying custom header/footer code for the page.
 #+latex: \onehalfspacing
 #+latex: \singlespacing
 
-* Page Layout
+* Page Layout with the ~geometry~ package
 To change the default layout of the page, insert the below code *after* the
 statement that includes the ~template.org~ file; this way, it will get inserted
 after the default specification that is defined in [[file:~/org/template.org]],
@@ -76,3 +79,13 @@ Parameters & documentation offered by the ~geometry~ package can be found here:
 #+latex_header: \predate{}
 #+latex_header: \postdate{}
 #+date:
+* ~babel~ package for languages
+#+LATEX_HEADER: \usepackage[english, french]{babel}
+\selectlanguage{english}
+\selectlanguage{french}
+
+* ~sectsty~ package: control sectional headers
+[[https://ctan.org/pkg/sectsty?lang=en][CTAN link for sectsty]]
+
+* ~titlesec~ package: select alternative section titles
+[[https://ctan.org/pkg/titlesec?lang=en#:~:text=titlesec%20%E2%80%93%20Select%20alternative%20section%20titles,simple%20one%2Dstep%20page%20styles.][CTAN link for titlesec]]
