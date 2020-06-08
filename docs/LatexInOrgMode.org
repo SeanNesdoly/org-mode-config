@@ -5,6 +5,8 @@
 * Resources
 - [[https://orgmode.org/worg/org-tutorials/org-latex-export.html][LaTeX Export for Org Mode]]
 - [[http://mirror.its.dal.ca/ctan/macros/latex/contrib/tocbibind/tocbibind.pdf][tocbibind Package Documentation]]
+- [[https://emacsclub.github.io/html/org_tutorial.html][Org-mode Tutorial]]
+
 * Headers and Footers ([[https://www.overleaf.com/learn/latex/headers_and_footers][OverleafDocs]]) ([[https://en.wikibooks.org/wiki/LaTeX/Customizing_Page_Headers_and_Footers][WikiBooks]])
 ** Style types
 - empty

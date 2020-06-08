@@ -1,5 +1,5 @@
 #+EMAIL: srnesdoly@gmail.com
-#+OPTIONS: toc:nil H:3 num:2
+#+OPTIONS: toc:nil H:3 num:2 tags:not-in-toc
 #+LATEX_CLASS: article
 #+LATEX_CLASS_OPTIONS: [a4paper]
 
