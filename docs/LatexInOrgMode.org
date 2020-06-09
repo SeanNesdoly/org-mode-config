@@ -101,7 +101,29 @@ Parameters & documentation offered by the ~geometry~ package can be found here:
 [[https://ctan.org/pkg/sectsty?lang=en][CTAN link for sectsty]]
 
 * ~titlesec~ package: select alternative section titles
-[[https://ctan.org/pkg/titlesec?lang=en#:~:text=titlesec%20%E2%80%93%20Select%20alternative%20section%20titles,simple%20one%2Dstep%20page%20styles.][CTAN link for titlesec]]
+- [[https://ctan.org/pkg/titlesec?lang=en#:~:text=titlesec%20%E2%80%93%20Select%20alternative%20section%20titles,simple%20one%2Dstep%20page%20styles.][CTAN link for titlesec]]
+- https://www.overleaf.com/learn/latex/sections_and_chapters
+
+** Parameters of \titleformat command
+\titleformat{<command>}[<shape>]{<format>}{<label>}{<sep>}{<before-code>}[<after-code>]
+
+- command: the sectioning command to be redefined
+  + Possible values are: \part, \chapter, \section, \subsection, \subsubsection,
+    \paragraph, \subparagraph
+- shape: the shape of the section
+  + Possible values are: hang, block, display, runin, leftmargin, rightmargin,
+    drop, wrap, frame
+- format: the format to be applied to the title, label, and text
+  + i.e. \normalfont\Large\bfseries
+- label: specify the label for the section (i.e. \thechapter prints the chapter
+  number)
+- sep: the horizontal separation between the label and title body; this must be
+  a length (preferably in `em`s, the size of an `M`) and must not be empty
+- before-code: insert LaTeX code preceding the title body
+- after-code: insert LaTeX code following the title body
+
+** Example
+#+LATEX: \titleformat{\section}[display]{\normalfont\bfseries\LARGE}{}{0em}{\vspace{-2em}}
 
 * ~hyperref~ package: link customization
 #+LATEX_HEADER: \usepackage{hyperref}
