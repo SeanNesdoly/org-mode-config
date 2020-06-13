@@ -78,13 +78,16 @@ options:
 
 ** A neat table
 #+CAPTION: Go Canada!
-|   | X                   | Y                           | Z    |
+|   | X                   | Y                           |    Z |
 |---+---------------------+-----------------------------+------|
-| / |                     | <                           | <>   |
-|   | 1                   | 2                           | 3    |
+| / |                     | <                           |   <> |
+|   | 1                   | 2                           |    3 |
 |   | 99                  | 100                         | 1000 |
-|   | hello..             | world?                      | Z    |
-|   | To be or not to be. | string-string-string-string | D    |
+|   | hello..             | world?                      |    1 |
+|   | To be or not to be. | string-string-string-string |   10 |
+|---+---------------------+-----------------------------+------|
+|   | TOTAL               |                             | 1014 |
+#+TBLFM: @>$4=vsum(@3..@-1)
 
 The initial sequencing of the human genome
 cite:lander01_initial_sequen_analy_human_genom.
