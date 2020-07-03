@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: fancy-header
-# key: <head
+# name: fancyhdr
+# key: <fancy
 # --
 #+latex: \pagestyle{fancy}
 #+latex: \lhead{\today}
