@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: table
+# key: <ta
+# --
+#+caption[${1:short caption}]: ${2:long caption}
+#+attr_latex: :placement [H] :align clp{5cm}
+|   | ${3:col1} | ${4:col2} | ${5:col3} |
+|---|------+------+------|
+| / | $0     |      |      |
+|   |      |      |      |
+|   |      |      |      |
