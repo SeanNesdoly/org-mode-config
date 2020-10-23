@@ -4,6 +4,6 @@
 # --
 #+begin_equation
 [[label:eqn:${1:label}]]
-$${2:LaTeX equation}$ \tag{${3:tag}}
+$${2:LaTeX equation}$
 #+end_equation
 $0
