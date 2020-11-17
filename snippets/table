@@ -4,7 +4,8 @@
 # --
 #+caption[${1:short caption}]: ${2:long caption}
 #+attr_latex: :placement [H] :align clp{5cm}
-|   | ${3:col1} | ${4:col2} | ${5:col3} |
+#+label: table:${3:label}
+|   | ${4:col1} | ${5:col2} | ${6:col3} |
 |---|------+------+------|
 | / | $0     |      |      |
 |   |      |      |      |
