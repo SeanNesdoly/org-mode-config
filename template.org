@@ -5,7 +5,7 @@
 
 #+LATEX_HEADER: \usepackage[margin=25mm]{geometry}
 #+LATEX_HEADER: \usepackage{parskip}
-#+LATEX_HEADER: \usepackage{caption}
+#+LATEX_HEADER: \usepackage[labelfont=bf,sc]{caption}
 #+LATEX_HEADER: \usepackage{float}
 #+LATEX_HEADER: \usepackage{multicol}
 #+LATEX_HEADER: \usepackage{fancyhdr}
