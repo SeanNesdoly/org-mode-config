@@ -8,6 +8,7 @@
 #+LATEX_HEADER: \usepackage[labelfont=bf,sc]{caption}
 #+LATEX_HEADER: \usepackage{float}
 #+LATEX_HEADER: \usepackage{multicol}
+#+LATEX_HEADER: \usepackage{multirow}
 #+LATEX_HEADER: \usepackage{fancyhdr}
 #+LATEX_HEADER: \usepackage{setspace}
 
