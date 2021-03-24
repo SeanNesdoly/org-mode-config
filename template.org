@@ -23,5 +23,6 @@
 #+LATEX_HEADER: \usepackage{hyperref}
 #+LATEX_HEADER: \hypersetup{colorlinks=true, linkcolor=DarkBlue, citecolor=blue}
 
-#+LATEX_HEADER: \usepackage[super, sort&compress]{natbib}
+#+LATEX_HEADER: \usepackage[super, sort&compress, numbers]{natbib}
+#+LATEX_HEADER: \renewcommand{\bibnumfmt}[1]{#1.}
 #+LATEX_HEADER: \usepackage[nottoc]{tocbibind}
