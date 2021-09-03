@@ -2,6 +2,7 @@
 # name: org-header
 # key: org
 # --
+-*- mode:org; -*-
 #+title: ${1: }
 #+subtitle: ${2: }
 #+author: ${3:Sean Nesdoly}
