@@ -1,11 +1,14 @@
 #+title: Example org Document \linebreak (line 2)
-#+subtitle: <subtitle>
+#+subtitle: <subtitle>\\
+#+subtitle: newline
 #+author: Sean Nesdoly
-#+date: 2019-10-04
+#+date: 2019-10-04\\
+#+date: \DTMdate{2022-03-22}\\
+#+date: \DTMnow
 #+include: ~/dotfiles/org-mode/latex.org
 
 #+latex: \pagestyle{fancy}
-#+latex: \lhead{\today}
+#+LATEX: \lhead{\DTMnow} % Last revision
 #+latex: \chead{Sean Nesdoly}
 
 #+latex: \singlespacing
