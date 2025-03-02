@@ -2,7 +2,7 @@
 #+subtitle: <subtitle>
 #+author: Sean Nesdoly
 #+date: 2019-10-04
-#+include: ~/org/template.org
+#+include: ~/dotfiles/org-mode/latex.org
 
 #+latex: \pagestyle{fancy}
 #+latex: \lhead{\today}
