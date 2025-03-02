@@ -66,6 +66,21 @@ Parameters & documentation offered by the ~geometry~ package can be found here:
 ** Restore geometry defined in the preamble of the document
 #+latex: \restoregeometry{}
 
+* Multiple Columns (\multicol package)
+- https://www.overleaf.com/learn/latex/Multiple_columns
+
+** Balanced Columns
+#+begin_src org
+#+latex: \begin{multicols}{2}
+#+latex: \end{multicols}
+#+end_src
+
+** Unbalanced Columns
+#+begin_src org
+#+latex: \begin{multicols*}{2}
+#+latex: \end{multicols*}
+#+end_src
+
 * Title configuration with the ~titling~ package
 #+latex_header: \usepackage{titling}
 
