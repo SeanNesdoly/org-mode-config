@@ -153,3 +153,27 @@ Parameters & documentation offered by the ~geometry~ package can be found here:
 - runcolor [cyan - same as file color]
 - urlcolor [magenta]
 - allcolors -- use this if you want to set all links to the same color
+
+* Tables
+- https://www.overleaf.com/learn/latex/Tables
+
+** Make a wide table fit the width of the page
+: #+ATTR_LATEX: :environment longtable :align |l|l|l|l|l|l|l|
+
+- You can replace the l with p{\*cm} where '\*' can be any numeral as required
+  to fit table to page.
+
+** Force table to landscape orientation
+: #+ATTR_LATEX: :float sideways
+
+** Merging columns within a row
+- Simply put the below in a cell of the raw org-mode table:
+  : \multicolumn{2}{c}{Your Text}
+
+** booktabs package
+- http://ctan.mirror.globo.tech/macros/latex/contrib/booktabs/booktabs.pdf
+
+* Figures
+- https://www.overleaf.com/learn/latex/positioning_images_and_tables
+
+: #+ATTR_LaTeX: :placement [H] :width 0.6\linewidth :height 0.6\linewidth
