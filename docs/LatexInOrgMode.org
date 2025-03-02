@@ -107,21 +107,21 @@ Parameters & documentation offered by the ~geometry~ package can be found here:
 \phantomsection % required if using hyperref
 \addcontentsline{toc}{section}{\abstractname}
 \end{abstract}
+
 * ~babel~ package for languages
 #+LATEX_HEADER: \usepackage[english, french]{babel}
 \selectlanguage{english}
 \selectlanguage{french}
 
 * ~sectsty~ package: control sectional headers
-[[https://ctan.org/pkg/sectsty?lang=en][CTAN link for sectsty]]
+- [[https://ctan.org/pkg/sectsty][ctan.org/pkg/sectsty]]
 
-* ~titlesec~ package: select alternative section titles
-- [[https://ctan.org/pkg/titlesec?lang=en#:~:text=titlesec%20%E2%80%93%20Select%20alternative%20section%20titles,simple%20one%2Dstep%20page%20styles.][CTAN link for titlesec]]
+* Title Formatting
+- [[https://ctan.org/pkg/titlesec][ctan.org/pkg/titlesec]]
 - https://www.overleaf.com/learn/latex/sections_and_chapters
 
-** Parameters of \titleformat command
-\titleformat{<command>}[<shape>]{<format>}{<label>}{<sep>}{<before-code>}[<after-code>]
-
+** ~titlesec~: parameters for \titleformat command
+: \titleformat{<command>}[<shape>]{<format>}{<label>}{<sep>}{<before-code>}[<after-code>]
 - command: the sectioning command to be redefined
   + Possible values are: \part, \chapter, \section, \subsection, \subsubsection,
     \paragraph, \subparagraph
@@ -133,12 +133,28 @@ Parameters & documentation offered by the ~geometry~ package can be found here:
 - label: specify the label for the section (i.e. \thechapter prints the chapter
   number)
 - sep: the horizontal separation between the label and title body; this must be
-  a length (preferably in `em`s, the size of an `M`) and must not be empty
+  a length (preferably in `em`s, the size of an `M`) and must not be empty.
+  + If <shape>=display, then <sep> defines the vertical distance between the
+    label and the title.
+  + If <shape>=frame, then <sep> defines the distance between the title text and
+    the frame.
 - before-code: insert LaTeX code preceding the title body
 - after-code: insert LaTeX code following the title body
 
-** Example
+*** Example usage
+#+begin_src org
+#+LATEX_HEADER: \usepackage{titlesec}
 #+LATEX: \titleformat{\section}[display]{\normalfont\bfseries\LARGE}{}{0em}{\vspace{-2em}}
+#+end_src
+
+** ~titletoc~: parameters for \titlecontents command
+: \titlecontents{<section>}[<left>]{<above-code>}{<numbered-entry-format>}{<numberless-entry-format>}{<filler-page-format>}[<below-code>]
+
+*** Example usage
+#+begin_src org
+#+LATEX_HEADER: \usepackage{titletoc}
+#+LATEX: \titlecontents{section}[0em]{\vskip 1ex}{\large\bfseries}{\large\bfseries\scshape}{\titlerule*[1em]{.}\contentspage}
+#+end_src
 
 * ~hyperref~ package: link customization
 #+LATEX_HEADER: \usepackage{hyperref}
